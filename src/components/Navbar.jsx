@@ -1,14 +1,30 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import assets from '../assets/assets'
 import ThemeToggleBtn from './ThemeToggleBtn'
 import { motion } from "motion/react"
 import { Link } from 'react-router-dom'
 
-
-
 const Navbar = ({theme, setTheme}) => {
 
     const [sidebarOpen, setSidebarOpen] = useState(false)
+    const sidebarRef = useRef(null) // Added for detecting outside clicks
+
+    // Close sidebar when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+                setSidebarOpen(false)
+            }
+        }
+
+        if (sidebarOpen) {
+            document.addEventListener('mousedown', handleClickOutside)
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside)
+        }
+    }, [sidebarOpen])
 
   return (
     <motion.div
@@ -19,7 +35,7 @@ const Navbar = ({theme, setTheme}) => {
       
         <img src={theme === 'dark' ? assets.logo_dark : assets.logo} className='w-14 sm:w-16' alt=''/>
 
-        <div className={`text-gray-700 dark:text-white sm:text-sm ${!sidebarOpen ? 'max-sm:w-0 overflow-hidden' : 'max-sm:w-60 max-sm:pl-10'} max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-primary max-sm:text-white max-sm:pt-20 flex sm:items-center gap-5 transition-all`}>
+        <div ref={sidebarRef} className={`text-gray-700 dark:text-white sm:text-sm ${!sidebarOpen ? 'max-sm:w-0 overflow-hidden' : 'max-sm:w-60 max-sm:pl-10'} max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-primary max-sm:text-white max-sm:pt-20 flex sm:items-center gap-5 transition-all`}>
 
             <img src={assets.close_icon} alt="" className='w-5 absolute right-4 top-4 sm:hidden' onClick={()=> setSidebarOpen(false)}/>
 

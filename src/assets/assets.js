@@ -47,7 +47,9 @@ import faculty from './faculty.jpg'
 import partnership from './partnership.jpg'
 import research from './research.jpg'
 import resources1 from './resources1.jpg'
-
+import ada_photo from './ada_photo.jpg'
+import chinedu_photo from './chinedu_photo.jpg'
+import institution_logo from './institution_logo.jpg'
 
 
 export const company_logos = [
@@ -102,7 +104,10 @@ const assets = {
   faculty,
   partnership,
   research,
-  resources1
+  resources1,
+  ada_photo,
+  chinedu_photo,
+  institution_logo
   
 }
 
