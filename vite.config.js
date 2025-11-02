@@ -8,4 +8,5 @@ export default defineConfig({
     react(), 
     tailwindcss()
   ],
+  base: './', // ✅ Add this line for correct asset paths on Vercel
 })
