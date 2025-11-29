@@ -264,13 +264,15 @@ const Capacity = () => {
           transformative training, partnerships, and technology-driven learning
           initiatives.
         </p>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full shadow-lg font-semibold"
-        >
-          Partner With Us
-        </motion.button>
+        <a href="/contact">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full shadow-lg font-semibold"
+          >
+            Partner With Us
+          </motion.button>
+        </a>
       </motion.div>
     </div>
   );
