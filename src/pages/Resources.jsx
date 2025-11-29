@@ -11,74 +11,79 @@ export default function Resources() {
     <div className="w-full overflow-hidden text-gray-800">
       {/* HERO SECTION */}
       {/* HERO SECTION */}
-<div className="flex flex-col items-center gap-6 py-20 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full">
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5, delay: 0.6 }}
-    viewport={{ once: true }}
-    className="inline-flex items-center gap-2 border border-gray-300 p-1.5 pr-4 rounded-full"
-  >
-    <img className="w-20" src={assets.group_profile} alt="Resource Group" />
-    <p className="text-xs font-medium">Learning. Access. Collaboration.</p>
-  </motion.div>
+      <div className="flex flex-col items-center gap-6 py-20 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="inline-flex items-center gap-2 border border-gray-300 p-1.5 pr-4 rounded-full"
+        >
+          <img
+            className="w-20"
+            src={assets.group_profile}
+            alt="Resource Group"
+          />
+          <p className="text-xs font-medium">
+            Learning. Access. Collaboration.
+          </p>
+        </motion.div>
 
-  <motion.h1
-    initial={{ opacity: 0, y: 40 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6, delay: 0.8 }}
-    viewport={{ once: true }}
-    className="text-4xl sm:text-5xl md:text-6xl xl:text-[78px] font-medium xl:leading-[90px] max-w-5xl"
-  >
-    Explore{" "}
-    <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">
-      Resources
-    </span>{" "}
-    that Inspire Growth.
-  </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          viewport={{ once: true }}
+          className="text-4xl sm:text-5xl md:text-6xl xl:text-[78px] font-medium xl:leading-[90px] max-w-5xl"
+        >
+          Explore{" "}
+          <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">
+            Resources
+          </span>{" "}
+          that Inspire Growth.
+        </motion.h1>
 
-  <motion.p
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5, delay: 1 }}
-    viewport={{ once: true }}
-    className="text-sm sm:text-lg font-medium text-gray-500 dark:text-white/75 max-w-4/5 sm:max-w-xl pb-3"
-  >
-    Access curated videos, insightful articles, and project showcases that
-    strengthen institutional capacity and lifelong learning.
-  </motion.p>
-</div>
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 1 }}
+          viewport={{ once: true }}
+          className="text-sm sm:text-lg font-medium text-gray-500 dark:text-white/75 max-w-4/5 sm:max-w-xl pb-3"
+        >
+          Access curated videos, insightful articles, and project showcases that
+          strengthen institutional capacity and lifelong learning.
+        </motion.p>
+      </div>
 
       {/* INTRO SECTION */}
-<section className="flex flex-col md:flex-row items-center gap-10 px-6 md:px-16 py-20 bg-white">
-  <motion.img
-    src={assets.resources1}
-    alt="Learning Resources"
-    className="w-full md:w-1/2 rounded-2xl shadow-lg object-cover"
-    initial={{ opacity: 0, x: -60 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.8 }}
-    viewport={{ once: true }}
-  />
-  <motion.div
-    variants={fadeUp}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true }}
-    className="w-full md:w-1/2"
-  >
-    <h2 className="text-3xl font-bold mb-4">Empowering Through Access</h2>
-    <p className="text-gray-600 leading-relaxed mb-4">
-      Our Resources Hub connects learners, educators, and partners to curated
-      content that inspires innovation and continuous growth.
-    </p>
-    <p className="text-gray-600 leading-relaxed">
-      From video highlights to research articles and digital libraries, we
-      bridge the gap between learning and real-world application.
-    </p>
-  </motion.div>
-</section>
-
+      <section className="flex flex-col md:flex-row items-center gap-10 px-6 md:px-16 py-20 bg-white">
+        <motion.img
+          src={assets.resources1}
+          alt="Learning Resources"
+          className="w-full md:w-1/2 rounded-2xl shadow-lg object-cover"
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        />
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="w-full md:w-1/2"
+        >
+          <h2 className="text-3xl font-bold mb-4">Empowering Through Access</h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Our Resources Hub connects learners, educators, and partners to
+            curated content that inspires innovation and continuous growth.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            From video highlights to research articles and digital libraries, we
+            bridge the gap between learning and real-world application.
+          </p>
+        </motion.div>
+      </section>
 
       {/* GRID SECTION */}
       <section className="py-20 px-6 md:px-16 bg-white">

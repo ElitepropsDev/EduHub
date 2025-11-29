@@ -103,7 +103,9 @@ const Capacity = () => {
             viewport={{ once: true }}
             className="w-full md:w-1/2"
           >
-            <h2 className="text-3xl font-bold mb-4">Faculty Training & Growth</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              Faculty Training & Growth
+            </h2>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
               Through specialized bootcamps, mentorships, and technical
               upskilling programs, we strengthen the teaching capacity of
@@ -169,7 +171,8 @@ const Capacity = () => {
             <h2 className="text-3xl font-bold mb-4">Research & Innovation</h2>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
               Our capacity programs inspire faculty-led research, encourage
-              innovation, and foster the creation of scalable learning solutions.
+              innovation, and foster the creation of scalable learning
+              solutions.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
               We bridge ideas and impact by transforming insights into practical
@@ -180,31 +183,31 @@ const Capacity = () => {
       </section>
 
       {/* VIDEO SECTION */}
-<motion.div
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.7, delay: 0.3 }}
-  viewport={{ once: true }}
-  className="py-20 px-4 sm:px-12 lg:px-24 xl:px-40 text-center bg-gradient-to-br from-[#eef3ff]/50 to-[#e6efff]/20 dark:from-[#0A0A14]/40 dark:to-[#111827]/60"
->
-  <h2 className="text-3xl sm:text-4xl font-semibold mb-3">
-    Watch Our Capacity Journey
-  </h2>
-  <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-    Experience how our faculty development programs and partnerships are transforming education across communities.
-  </p>
-  <div className="relative w-full max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-lg">
-    <iframe
-      className="w-full h-full"
-      src="https://www.youtube.com/embed/06jkszpdNGc?mute=1"
-      title="Capacity Development Video"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-  </div>
-</motion.div>
-
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="py-20 px-4 sm:px-12 lg:px-24 xl:px-40 text-center bg-gradient-to-br from-[#eef3ff]/50 to-[#e6efff]/20 dark:from-[#0A0A14]/40 dark:to-[#111827]/60"
+      >
+        <h2 className="text-3xl sm:text-4xl font-semibold mb-3">
+          Watch Our Capacity Journey
+        </h2>
+        <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+          Experience how our faculty development programs and partnerships are
+          transforming education across communities.
+        </p>
+        <div className="relative w-full max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-lg">
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/06jkszpdNGc?mute=1"
+            title="Capacity Development Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </motion.div>
 
       {/* STATS SECTION */}
       <motion.div
@@ -247,29 +250,28 @@ const Capacity = () => {
         </div>
       </motion.div>
       <motion.div
-  className="w-full text-center py-20 bg-gradient-to-r from-blue-50 to-white"
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
-  viewport={{ once: true }}
->
-  <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-    Partner With Us to Drive Innovation
-  </h2>
-  <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-    Join hands with EduHub to empower institutions and faculty through
-    transformative training, partnerships, and technology-driven learning
-    initiatives.
-  </p>
-  <motion.button
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full shadow-lg font-semibold"
-  >
-    Partner With Us
-  </motion.button>
-</motion.div>
-
+        className="w-full text-center py-20 bg-gradient-to-r from-blue-50 to-white"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          Partner With Us to Drive Innovation
+        </h2>
+        <p className="text-gray-600 max-w-2xl mx-auto mb-8">
+          Join hands with EduHub to empower institutions and faculty through
+          transformative training, partnerships, and technology-driven learning
+          initiatives.
+        </p>
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full shadow-lg font-semibold"
+        >
+          Partner With Us
+        </motion.button>
+      </motion.div>
     </div>
   );
 };
