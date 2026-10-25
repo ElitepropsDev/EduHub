@@ -1,22 +1,26 @@
 import Hero from '../components/Home/Hero'
-import TrustedBy from '../components/Home/TrustedBy'
 import Services from '../components/Home/Services'
-import OurWork from '../components/Home/OurWork'
-import Teams from '../components/Home/Teams'
 import ContactUs from '../components/Home/ContactUs'
 import Mission from '../components/Home/Mission'
-import SuccessStories from '../components/Home/SuccessStories'
+import Ecosystem from '../components/Home/Ecosystem'
+import TheGap from '../components/Home/TheGap'
+import HowCareerXPWorks from '../components/Home/HowCareerXPWorks'
+import Projects from '../components/Home/Projects'
+import WhyCareerXP from '../components/Home/WhyCareerXP'
+import Partnerships from '../components/Home/Partnerships'
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <TrustedBy />
+      <Ecosystem/>
       <Mission/>
+      <TheGap/>
+      <HowCareerXPWorks/>
       <Services />
-      <OurWork />
-      <SuccessStories />
-      <Teams />
+      <Projects />
+       <WhyCareerXP />
+       <Partnerships />
       <ContactUs />
     </>
   )

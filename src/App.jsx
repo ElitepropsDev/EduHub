@@ -17,13 +17,34 @@ import Contact from './pages/Contact'
 
 // ScrollToTop Component
 const ScrollToTop = () => {
-  const { pathname } = useLocation()
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }, [pathname])
-  return null
-}
+  const { pathname, hash } = useLocation();
 
+  useEffect(() => {
+    if (hash) {
+      const scrollToSection = () => {
+        const target = document.getElementById(hash.slice(1));
+
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      };
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(scrollToSection);
+      });
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  }, [pathname, hash]);
+
+  return null;
+};
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
   const [loading, setLoading] = useState(true) // 🌀 Added loading state

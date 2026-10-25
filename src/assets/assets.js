@@ -50,6 +50,8 @@ import resources1 from './resources1.jpg'
 import ada_photo from './ada_photo.jpg'
 import chinedu_photo from './chinedu_photo.jpg'
 import institution_logo from './institution_logo.jpg'
+import Hero from './hero.jpg'
+import hero2 from './hero2.jfif'
 
 
 export const company_logos = [
@@ -107,7 +109,9 @@ const assets = {
   resources1,
   ada_photo,
   chinedu_photo,
-  institution_logo
+  institution_logo,
+  Hero,
+  hero2
   
 }
 

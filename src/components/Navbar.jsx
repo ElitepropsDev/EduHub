@@ -42,8 +42,8 @@ const Navbar = ({theme, setTheme}) => {
             {/* Updated Links for multi-page routing */}
             <Link onClick={()=>setSidebarOpen(false)} to="/" className='sm:hover:border-b'>Home</Link>
             <Link onClick={()=>setSidebarOpen(false)} to="/programs" className='sm:hover:border-b'>Programs</Link>
-            <Link onClick={()=>setSidebarOpen(false)} to="/projects" className='sm:hover:border-b'>Projects</Link>
-            <Link onClick={()=>setSidebarOpen(false)} to="/capacity" className='sm:hover:border-b'>Capacity</Link>
+            {/* <Link onClick={()=>setSidebarOpen(false)} to="/projects" className='sm:hover:border-b'>Projects</Link> */}
+            {/* <Link onClick={()=>setSidebarOpen(false)} to="/capacity" className='sm:hover:border-b'>Capacity</Link> */}
             <Link onClick={()=>setSidebarOpen(false)} to="/resources" className='sm:hover:border-b'>Resources</Link>
             <Link onClick={()=>setSidebarOpen(false)} to="/contact" className='sm:hover:border-b'>Contact Us</Link>
         </div>
